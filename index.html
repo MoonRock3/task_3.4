@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача 3.4</title>
+    <style>
+        input {
+            font-size: 18px;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+        label {
+            font-size: 20px;
+            width: 100px;
+            display: inline-block;
+        }
+        fieldset {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Общая информация</legend>
+            <div>
+                <label for="surname">Фамилия</label>
+                <input id="surname" type="text" name="surname" placeholder="Иванов">
+            </div>
+            <div>
+                <label for="name">Имя</label>
+                <input id="name" type="text" name="name" placeholder="Иван">
+            </div>
+            <div>
+                <label for="second_name">Отчество</label>
+                <input id="second_name" type="text" name="second_name" placeholder="Иванович">
+            </div>
+            <div>
+                <label for="email">email</label>
+                <input id="email" type="email" name="email" placeholder="mail@mail.ru">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Пол</legend>
+            <input id="genderChoice1" type="radio" name="gender" value="male">
+            <label for="genderChoice1">М</label>
+
+            <input id="genderChoice2" type="radio" name="gender" value="female">
+            <label for="genderChoice2">Ж</label>
+        </fieldset>
+        <fieldset>
+            <legend>Хобби</legend>
+            <input id="hobbyChoice1" type="checkbox" name="hobby" value="drawing">
+            <label for="hobbyChoice1">Рисование</label>
+
+            <input id="hobbyChoice2" type="checkbox" name="hobby" value="reading">
+            <label for="hobbyChoice2">Чтение</label>
+
+            <input id="hobbyChoice3" type="checkbox" name="hobby" value="knitting">
+            <label for="hobbyChoice3">Вязание</label>
+
+            <input id="hobbyChoice4" type="checkbox" name="hobby" value="cooking">
+            <label for="hobbyChoice4">Кулинария</label>
+        </fieldset>
+        <div class="buttons">
+            <input type="submit">
+            <input type="reset" value="Очистить">
+        </div>
+    </form>
+</body>
+</html>
